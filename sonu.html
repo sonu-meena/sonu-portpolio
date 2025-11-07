@@ -1,0 +1,1016 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonu Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      /* font-family: "Poppins", sans-serif; */
+    }
+
+    .header {
+      min-height: 100vh;
+      /* width: 100%; */
+      position: relative;
+      background-image: url("https://i.pinimg.com/originals/77/87/c6/7787c6081505451ca11acc8b43aa75ec.gif");
+      
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding: 10px 10%;
+      position: relative;
+      z-index: 1;
+    }
+
+    .logo {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 32px;
+      padding: 10px 0;
+
+    }
+
+    .logo:hover {
+      color: #5854cf;
+      text-shadow: 0 0 4px #e3dbdd;
+    }
+
+    .navlinks {
+     
+      padding: 20px 30px;
+      border-radius: 28px;
+            box-shadow: 5px 0 20px rgba(95, 87, 89, 0.3);
+
+
+    }
+
+    .navlinks ul {
+      display: flex;
+      list-style: none;
+    }
+
+    .navlinks ul li {
+      padding: 0 30px;
+      /* margin: 0 10px; */
+      /* display: inline-block; */
+    }
+
+    .navlinks ul li a {
+      color:#fff;
+      /* box-shadow:10px  red; */
+      text-decoration: none;
+      font-size: 20px ;
+      transition: 0.3s;
+      position: relative;
+    }
+    .navlinks ul li a:hover{
+      /* color: brown; */
+      text-shadow: 0 02px #ccc;
+        background: linear-gradient(rgb(87, 85, 85), rgb(249, 75, 12));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+    .leftside {
+      /* background-image: url("https://i.gifer.com/Lj1v.gif"); */
+      /* background: red; */
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20%;
+      height: 100%;
+    }
+
+    .row {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      padding: 0 10%;
+      position: relative;
+      gap: 50px;
+    }
+
+    .leftcol {
+      flex-basis: 30%;
+
+    }
+
+    .leftcol img {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid #fcfafa;
+      box-shadow: 0 0 25px rgba(110, 17, 46, 0.4);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .leftcol img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 40px rgb(231, 164, 164);
+    }
+
+    .rightcol {
+      flex-basis: 80%;
+    }
+
+    .rightcol h1 {
+      font-size: 50px;
+      color: red;
+    }
+
+    .rightcol p {
+      margin-top: 25px;
+      font-size: 20px;
+      color: #ccc;
+      line-height: 1.5;
+    }
+    
+    footer {
+      background: #111319;
+      padding: 60px 8%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .footer-col {
+      flex: 1 1 220px;
+    }
+
+    .footer-col h3 {
+      font-size: 1.3rem;
+      color: #fff;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .footer-col h3::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 50px;
+      height: 2px;
+      background: #ff3b30;
+      border-radius: 10px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      margin-top: 15px;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 12px;
+    }
+
+    .footer-col ul li a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: 0.3s;
+    }
+
+    .footer-col ul li a:hover {
+      color: #ff3b30;
+      text-decoration: underline;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: #ff3b30;
+      font-size: 1.1rem;
+      transition: 0.3s;
+    }
+
+    .social-links a:hover {
+      background: #ff3b30;
+      color: #fff;
+      transform: translateY(-3px);
+    }
+
+    .copyright {
+      width: 100%;
+      text-align: center;
+      color: #888;
+      font-size: 0.9rem;
+      padding: 25px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      background: #0d0d0f;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <nav>
+      <a href="#" class="logo">Sonu </a>
+      <div class="navlinks">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About-us</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact-us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="leftside"></div>
+
+    <div class="row">
+      <div class="leftcol">
+        <img src="/IMG.sonu.png" alt="">
+      </div>
+      <div class="rightcol">
+        <h1>Hi, I'm <span style="color:white;">Sonu Meena</span></h1>
+        <p>
+          I’m a passionate Frontend Developer specializing in crafting clean, modern, and responsive web interfaces
+          using HTML and CSS,JS.
+        </p>
+         <div class="social-links">
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+      </div>
+      </div>
+    </div>
+  </div>
+<footer>
+    <div class="footer-col">
+      <h3>About Me</h3>
+      <p style="color:#ccc;margin-top:10px;">
+        Front-end Developer passionate about building beautiful and functional websites using HTML, CSS, and JavaScript.
+      </p>
+      <div class="social-links">
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Services</h3>
+      <ul>
+        <li><a href="#">Web Design</a></li>
+        <li><a href="#">UI/UX Design</a></li>
+        <li><a href="#">Responsive Layouts</a></li>
+        <li><a href="#">SEO Optimization</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="#">📧 sonumeena@gmail.com</a></li>
+        <li><a href="#">📞 +91 98765 43210</a></li>
+        <li><a href="#">📍 indore, India</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="copyright">
+    © 2025 Sonu Meena. All rights reserved.
+  </div>
+
+   For icons 
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Cards - Flexbox</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f5f7fa;
+      padding: 40px 20px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 25px;
+      flex-wrap: wrap; /* responsive stacking */
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #fff;
+      width: 330px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    .card img {
+      width: 100%;
+      max-width: 260px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .course-tag {
+      color: #6b7280;
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
+
+    .title {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #111827;
+      text-align: center;
+    }
+
+    .desc {
+      font-size: 15px;
+      color: #6b7280;
+      line-height: 1.6;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      border: 2px solid royalblue;
+      color: royalblue;
+      background: transparent;
+      padding: 10px 22px;
+      border-radius: 999px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+
+    .btn:hover {
+      background: royalblue;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/260x150/EEF3FF/000?text=HTML" alt="HTML course image">
+      <p class="course-tag">Course</p>
+      <h2 class="title">Learn HTML</h2>
+      <p class="desc">A solid overview of HTML for developers, from novice to expert level HTML.</p>
+      <button class="btn">Start course</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/260x150/F3F4F6/000?text=CSS" alt="CSS course image">
+      <p class="course-tag">Course</p>
+      <h2 class="title">Learn CSS</h2>
+      <p class="desc">A guide to CSS with modules covering everything from accessibility to z-index.</p>
+      <button class="btn">Start course</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/260x150/EFEFFF/000?text=JavaScript" alt="JavaScript course image">
+      <p class="course-tag">Course</p>
+      <h2 class="title">Learn JavaScript</h2>
+      <p class="desc">An in-depth course on the basics of JavaScript.</p>
+      <button class="btn">Start course</button>
+    </div>
+
+  </div>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Poppins", sans-serif; */
+}
+
+.header {
+    min-height: 100vh;
+    /* width: 100%; */
+    position: relative;
+    background-image: url("/img.gif");
+    /* background-image: url("https://i.pinimg.com/originals/77/87/c6/7787c6081505451ca11acc8b43aa75ec.gif"); */
+
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 10%;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 10px 0;
+
+}
+
+.logo:hover {
+    color: #5854cf;
+    text-shadow: 0 0 4px #e3dbdd;
+}
+
+.navlinks {
+
+    padding: 20px 30px;
+    border-radius: 28px;
+    box-shadow: 5px 0 20px rgba(95, 87, 89, 0.3);
+
+
+}
+
+.navlinks ul {
+    display: flex;
+    list-style: none;
+}
+
+.navlinks ul li {
+    padding: 0 30px;
+    /* margin: 0 10px; */
+    /* display: inline-block; */
+}
+
+.navlinks ul li a {
+    color: #fff;
+    /* box-shadow:10px  red; */
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.navlinks ul li a:hover {
+    /* color: brown; */
+    text-shadow: 0 02px #ccc;
+    background: linear-gradient(rgb(87, 85, 85), rgb(249, 75, 12));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.leftside {
+    /* background-image: url("https://i.gifer.com/Lj1v.gif"); */
+    /* background: red; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+}
+
+.row {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    position: relative;
+    gap: 50px;
+}
+
+.leftcol {
+    flex-basis: 30%;
+
+}
+
+.leftcol img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #fcfafa;
+    box-shadow: 0 0 25px rgba(110, 17, 46, 0.4);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.leftcol img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgb(231, 164, 164);
+}
+
+.rightcol {
+    flex-basis: 80%;
+}
+
+.rightcol h1 {
+    font-size: 50px;
+    color: red;
+}
+
+.rightcol p {
+    margin-top: 25px;
+    font-size: 20px;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.center {
+    background: #111319;
+    height: 120vh;
+
+}
+
+.center h1 {
+    color: #fff;
+    padding: 20px 0;
+    /* margin: 20px 0; */
+}
+
+.center p {
+    color: #fff;
+    padding: 30px 0;
+
+}
+
+.centermain {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    height: 70vh;
+}
+
+.center1 {
+    width: 24%;
+    /* height: 40vh; */
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: #ff3b30; */
+    background: rgb(29, 30, 29);
+    box-shadow: 0 0 1ch white;
+    transition: all 0.3s ease;
+
+}
+.center1 p{
+    padding: 0 10px;
+}
+.center1 img{
+    width: 20%;
+    padding: 10px;
+}
+
+.center1:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18ch rgba(0, 0, 0, 0.12);
+
+}
+
+.center1 button {
+    margin-top: 40px;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: transparent;
+
+    /* text-shadow: 1 0 2px red; */
+}
+
+.center1 button:hover {
+    color: white;
+    background-color: rgb(38, 125, 175);
+
+}
+
+.gap {
+    background: #111319;
+    height: 30vh;
+    color: #fff;
+    /* gap: 10px; */
+}
+
+.gap h1 {
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    background: #111319;
+    height: 120vh;
+
+    /* max-width: 1200px; */
+}
+
+.card {
+    background: #f7f6f6;
+    width: 330px;
+    height: 80vh;
+    border-radius: 16px;
+        box-shadow: 0 0 1ch white;
+
+    /* box-shadow: 10 4px 12ch rgba(230, 39, 39, 0.08); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18ch rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+    width: 80%;
+    /* max-width: 260px; */
+    /* height: auto; */
+    margin-bottom: 20px;
+}
+
+.course-tag {
+    color: #6b7280;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #111827;
+    text-align: center;
+}
+
+.desc {
+    font-size: 15px;
+    color: #6b7280;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    border: 2px solid royalblue;
+    color: royalblue;
+    background: transparent;
+    padding: 10px 22px;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.btn:hover {
+    background: royalblue;
+    color: #fff;
+}
+
+footer {
+    background: #111319;
+    padding: 60px 8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-col {
+    flex: 1 1 220px;
+}
+
+.footer-col a {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+.footer-col h3 {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 20px;
+    /* text-decoration: none; */
+    position: relative;
+}
+
+.footer-col h3::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #ff3b30;
+    border-radius: 10px;
+}
+
+
+.footer-col a::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #ff3b30;
+    border-radius: 10px;
+}
+
+.footer-col ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #ff3b30;
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #ff3b30;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #ff3b30;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+    padding: 25px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    background: #0d0d0f;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <nav>
+      <a href="#" class="logo">Sonu </a>
+      <div class="navlinks">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#About-us">About-us</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#Contact-us">Contact-us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="leftside"></div>
+
+    <div class="row">
+      <div class="leftcol">
+        <img src="/IMG.sonu.png" alt="">
+      </div>
+      <div class="rightcol">
+        <h1>Hi, I'm <span style="color:white;">Sonu Meena</span></h1>
+        <p>
+          I’m a passionate Frontend Developer specializing in crafting clean, modern, and responsive web interfaces
+          using HTML and CSS,JS.
+        </p>
+        <div class="social-links">
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="center">
+    <h1>Explore the web platform</h1>
+    <p>The web platform is a constantly evolving ecosystem of browser features and APIs that developers can use to make
+      websites that are easy and delightful to use. These pages are pathways for you to dive into each part of the web
+      platform on web.dev—at your pace:</p>
+    <div class="centermain">
+      <div class="center1">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoLBWyEV75SBEIkRXhQf2RbupVBafLrfFxgQ&sL" alt="HTML course image">
+        <h2>HTML</h2>
+        <p>HTML is the document layer of the web, providing structure and semantics for pages.</p>
+        <button>learn more</button>
+      </div>
+      <div class="center1">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAA8FBMVEX///8mTeQpZfHr6+sAAAAmS+P///sAOeEpYe+tra3y8evv7usOQeMmZPEcR+T18+yzvOuKmek0avAPW/BPUVri4+YzWOaCg4fr7PVsbXF5e4IfSeRzhudydIEAPePCzvnEy+t7mPMAVfCWrPWPkJcnVOiWlpkaX/EAN+IAVPCnp6cRFy1ub3iDk+ji5PT09fmnsuvL1fqfq+m5x/hihvJGYuJKd/HO0+tsjvNacePd4PUAI+HT09TExMWoqbF4eocJDBo+QEpNZ+Jne+Z8jOiMpfVhd+Zdg/I9b/A5WeFVbeKKmOudqOza3uyqtOppfOJzVXzeAAAIw0lEQVR4nO2dfXfaNhTGTVIHCsZAaRirmSGkKWQbgUDz2q3b8p6UJN//28wu+EW6soUtjI5v9PvTJ76H+xxZ1uMr3WiaQqFQKBQKSYx/f0/yl3ORcQ383d+yf7kEdt9RfNG0Cn3tk6a16Wu/yv7lElhJrF+UWD9RYiVAiZUAJVYC4sT657cl3wOxwtfeHEux/v3yecnfgVjj7QW740As79r2tuxfLoGlWH+Er6mlQwQriaXmrAVKrAQosRKgxEqAEisBrKWDtruk/d0Xy7+2+/3NixXgLErHf35a8tEXC1xTYr1TdicOJVYClFgJUGIlQImVgPF7RnHiv48kjoBt+tpn2b9coVAoFAqFQpE3djaK7GzFuPxW3CDf2rLzFWNY2CDDnA+tlr45rXRddraCPFmbE8u6kp2tIB1zc2KZr7KzFeTHJsUayc5WkPkmxZrLzlaQurE5sYwX2dkK0rVT5a0nwRerKztbQc5SiaVXS6tT9e6yj2VnK8hRMZVYW0nwhpZ9JDtbQcbZi1XyxCqOZWcrygbE8u4q5tztaJqVxu+kEks3ZecqzFUav5NIrMHyJutEdq7CXKdZlSYSq7W8ybyTnaswN5mLdbB80M0b2bkKM0+zhE8nVkN2rsJMshdreZMxkZ2rMKnMYSKxvJuMuuxcheml8TuJxPIX8D3ZuQpzBMXiW2OrygeKdSk7V2Gg39FbfD7w8dSq+m4n57Udhx0gljGpceHHnTSXYvluZ5h9Mplj0H7HbJS3efDD3g5osYzsc8mcRyDWzTrEOi8txfLcjv6YfS6Zc0GbQ+uutgax7j2xml7Yp+xzyRxQDLNO1iGWP8H7C/hO9rlkToMWS9fXIZY3v2NyO5o2BUv4YmUNYh36Ynnz+zT7XDIH+h27LS5Wu4/Q7bD8jn3GHVrcqJdNWiwEbofld4yeuFjHvliI3A7L7xh1cbFmnliY3A7T70zFxZr6bgdPIcwF1HfMRq3CgRsUp9vRtBO4hK/z6ELIcvOeJxYqt6Npd6BkYRk8moBDciOD73a82o51ISm99ZKivsP4UtokX3YPKN0Ow++kEqtPvuwGQCwMbidVfYclFhFzx1/Ae2KhcDup6jtQrGqTiInU7TiL7eT1HYZYD0RMhtvJ+062BZfrEKt0T8RE6nacRyb5Fi0o1mCPiDkDYqFwO85knPz8DkOsfSLmBLidvJ/b8VjHY9gkNzLsI3U7jPpOGrFmRMg9Wiy9JSm5dZP8sBNDLPJl9xW4HQy1HRd42Ek3OZQGFIfky+7UW8C3cLkdVn2ncNOJZ4/mnOd2fkhKbt2A+o5u1Mrx8EL2tyixjLwfcvKAfqco+KV07IvlRcz9IScPRn3nWUwspLUdF+h3uMUwTkSG2znbSCrZA/0Ot77DidiFbifvh5w8xsDvGC9iYjHcDorajgsUa87ZosUJCN0Ohm1/Cw5AMWwkJhZ0O3lv6RAADjuZHTGxoNvJe0uHgFewn+2Js0WLE/AULOCvN5LIJhgBv/MoJlYJiJX3lg4B4LCT43eExMLrdjTthbH5T8QbMtxO/g85ecDmDuaoEcs+DRHvCLid3Ld0CGA0d+B8z6K+ZjXJQhhit5OivkN/KS19JeJBt5P7lg4hRMWiCmEv/poU1062BUkL+EAscs6Cbif/LR0Ckjazo8WiCmFwJxset8Oq71h2GLBopcUiC2HnwO3kv6VDADy/c3XWC0G3JANikYUw6Hby3sAuDGhm5/id0HbbMv3hGYhFFsKqiN0Oy++YYb9ToRditFjUtr/+Fi0WHrfDrO8Qn0p3ixyxiJdd4Hb8Q05Yajsu0O+Q9Z1K/MiqDoho0O3YeNwOy++Q9Z1aQY8V65SMBsXC43ZYzezIw0416mABJRbX7aCp7bjwDjvVqIMFlFi020F6bseDcdgp/BW+fBMvFs/t4KntuOjwsBMhViNWLMrtgENOqNwO47ATWd+pTIdWtFilwwi3g6iBXRjQzI5q7vA8vXMcogXFKg2azfMZOSWd0tYQUW3HBdR3LKq+U6lVeo2TomHqgVjVQbN/P4X722FLh/w3sAsDmnfrFqjvVMq13frowBVM/ynUwy371ER/ixYLk9thHXZiN3dwBHuevJp2f7A3izoFwHA7eGo7LozmDlH72SqVWrkXd7aEUduZxfx5/uD5HVqwuFiXsFzR21AamwFu/otv7hAXi1HbwXHIySNpc4e4WIyWDqjcTuLmDnGxptDtIKrtuCRsZhcXCrodLIecPB6h36mVo8dWXCicDezCgGZ2BbNwU9+NEiwqzLi7V/IGFraWDgGM5g66aQyv5r1yrQIFY8Y43j89bA6Cbq5I3U5kcwfLtI3XyTMYYOD+9uy8GRaKEAtHS4eA6OYOzgArtkbdbUIw8ubj2w/9ZmmLBlUDuzDxzR1cwZ7mZ4FewY2X0/tDekjRbgdHS4cAfvNuy7CtjjflL25qz/YGTcaQosRC5naYzbvZA+yx0XOctOZO5w/9iCGF2+2wzu9EDTBnyr+bvHzlCLWFrYFdGOh3YgfYIPLZCwgOOclObu2A+k6sXHypwtv+ZOe2dkB9R1gstG6H1cxOVCxv7yU6t5OwmR1frNKB/8fo3I6m3a5PrFLLMTrBFIjO7SRsZhctVnVwQL8q0LkdTeuuQSzn2dML4K2Kzu0k/GdFDLGoZy8EOreTsJkd2CZ5wNZpIRY2t+OY4m/LfQxJxWI/e/5fmsY3bG7HoV3vGLax2tLUE6vkDqloiV0f2akj1OonZ/OT4SoDTF9pSA1P5pg23jIYd0d60eAtuqKnc0+owqiLq7QaxdHkumivPoPRStn29Qum7clcdnqN1kpPJBhSrUZP9o+XgTvlF1ec8gvud+eiiXc6X4XL6dMqA8x59oYXE3wLqsQ4U34hbsp3n72DUQ/Z5g8Bjl6uw7uVw8+ebby+rel8JcAibFHfV89eBON6x1pO+aYznd+8kaVUei6nF0PbHt5N1LO3EjtdHP82QKFQKBQKfPwPD+wheqXcCxsAAAAASUVORK5CYII=" alt="CSS course image">
+
+        <h2>CSS</h2>
+        <p>CSS is the presentation layer of the web, and allows you to your web pages look just like you want them to.
+        </p>
+        <button>learn more</button>
+      </div>
+      <div class="center1">
+      <img src="data:image/png;base64,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" alt="JavaScript course image">
+
+        <h2>JavaScript</h2>
+        <p>JavaScript provides rich interactivity to web pages, allowing developers to build richly interactive websites
+          that help users to perform tasks and accomplish goals.</p>
+        <button>learn more</button>
+      </div>
+    </div>
+  </div>
+
+<div class="gap">
+  <h1>Learn the web platform</h1>
+  <p>New to the web platform? We've got you covered! Dive into each part of the web platform with these courses curated specifically for beginners to HTML, CSS, and JavaScript.</p>
+</div>
+
+  <div class="container">
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoLBWyEV75SBEIkRXhQf2RbupVBafLrfFxgQ&sL" alt="HTML course image">
+      <p class="course-tag">Course</p>
+      <h2 class="title">Learn HTML</h2>
+      <p class="desc">A solid overview of HTML for developers, from novice to expert level HTML.</p>
+      <button class="btn">Start course</button>
+    </div>
+
+    <div class="card">
+      <img src="data:image/png;base64,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" alt="CSS course image">
+      <p class="course-tag">Course</p>
+      <h2 class="title">Learn CSS</h2>
+      <p class="desc">A guide to CSS with modules covering everything from accessibility to z-index.</p>
+      <button class="btn">Start course</button>
+    </div>
+
+    <div class="card">
+      <img src="data:image/png;base64,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" alt="JavaScript course image">
+      <p class="course-tag">Course</p>
+      <h2 class="title">Learn JavaScript</h2>
+      <p class="desc">An in-depth course on the basics of JavaScript.</p>
+      <button class="btn">Start course</button>
+    </div>
+
+  </div>
+
+
+
+
+  <section id="About-us">
+    <footer>
+      <div class="footer-col">
+        <!-- <h3>About Me</h3> -->
+        <a href="#About-us">About-us</a>
+        <p style="color:#ccc;margin-top:10px;">
+          Front-end Developer passionate about building beautiful and functional websites using HTML, CSS, and
+          JavaScript.
+        </p>
+        <div class="social-links">
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">UI/UX Design</a></li>
+          <li><a href="#">Responsive Layouts</a></li>
+          <li><a href="#">SEO Optimization</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="#">📧 sonumeena@gmail.com</a></li>
+          <li><a href="#">📞 +91 98765 43210</a></li>
+          <li><a href="#">📍 indore, India</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <div class="copyright">
+      © 2025 Sonu Meena. All rights reserved.
+    </div>
+  </section>
+
+  <!-- For icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
