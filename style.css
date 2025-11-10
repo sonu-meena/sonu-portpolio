@@ -112,14 +112,18 @@
 .header {
     display: block;
     min-height: 100vh;
-    /* width: 100%; */
+    width: 100%;
+    /* background-color: #0d0d0f; */
     position: relative;
     background-position: center;
     background-image: url("/img.gif");
     display: flex;
     flex-direction: column;
 }
-
+.header img{
+    width: 100%;
+    height: 80vh;
+}
 nav {
     display: flex;
     width: 100%;
@@ -724,6 +728,7 @@ footer {
         padding: 0 10px;
     }
 .first img{
+ height: 40vh;
     width: 70%;
 }
 }
