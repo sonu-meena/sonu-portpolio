@@ -117,7 +117,9 @@
     /* background-color: #0d0d0f; */
     /* position: relative; */
     background-position: center;
-    background-image: url("/img.gif");
+    background-image: url("./img.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
 }
