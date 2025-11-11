@@ -22,6 +22,7 @@
     height: 5px;
     background-color: black;
     margin: 6px 0;
+    cursor: pointer;
 }
 
 .links ul {
@@ -69,10 +70,9 @@
     align-items: center;
     background-position: center;
     background-image: url("./img.gif")
-
-     /* background-position: center; */
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
+        /* background-position: center; */
+        /* background-size: cover; */
+        /* background-repeat: no-repeat; */
 }
 
 .first {
@@ -111,19 +111,22 @@
 
 .header {
     display: block;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    height: 100vh;
     width: 100%;
     /* background-color: #0d0d0f; */
-    position: relative;
+    /* position: relative; */
     background-position: center;
     background-image: url("/img.gif");
     display: flex;
     flex-direction: column;
 }
-.header img{
+
+.header img {
     width: 100%;
-    height: 80vh;
+    height: 70vh;
 }
+
 nav {
     display: flex;
     width: 100%;
@@ -179,6 +182,10 @@ nav {
 .navlinks ul li a:hover {
     /* color: brown; */
     text-shadow: 0 02px #ccc;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 30px;
+    transition: 0.4s ease-in-out;
     background: linear-gradient(rgb(87, 85, 85), rgb(249, 75, 12));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -245,7 +252,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 24px;
     padding-bottom: 30px;
 
 }
@@ -258,98 +265,43 @@ nav {
     background: red;
     /* text-shadow: 10  0 10ch white; */
     color: white;
+    cursor: pointer;
     border-bottom: 2px solid black;
 
 }
 
 .project h2 {
-    border: 1px solid black;
     border-radius: 10px;
-    background: rgb(138, 131, 131);
-    padding: 8px 20px;
+    padding: 4px 20px;
     border-bottom: 2px solid black;
 }
 
-.netflix,
-.perfume,
-.decent {
-    /* background: red; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.netflix button,
-.perfume button,
-.decent button {
-    padding: 10px 20px;
+.button button {
+    padding: 4px 7px;
+    /* margin-bottom: 200px; */
+    background-color: #0987b8;
+    color: white;
     border-radius: 30px;
-    background: white;
-    font-size: 40px;
     cursor: pointer;
-    /* text-align: end; */
-    color: #0d0d0e;
-    border: 1px solid white;
-    box-shadow: 0 0 25px rgba(110, 17, 46, 0.4);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-
-
 }
 
-.decent button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 40px rgb(229, 5, 5);
-
+.button button:hover {
+    background-color: red;
+    transition: 0.7s ease-in-out;
 }
 
-.netflix button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 40px rgb(180, 14, 14);
-
-}
-
-.perfume button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 40px rgb(165, 13, 13);
-
-}
-
-.netflix {
+.myprojects {
     height: 40vh;
     width: 90%;
-            background-position: center;
+    background-position: center;
 
-    background-image: url("./netflix.jpeg");
-    /* background-position: center; */
     background-size: cover;
-    background-repeat: no-repeat;
-    border: 3px solid red;
-}
-
-.perfume {
-    height: 40vh;
-    width: 90%;
-        background-position: center;
-
-    background-image: url("./perfume.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-        border: 3px solid red;
-
-}
-
-.decent {
-    height: 40vh;
-    width: 90%;
-            background-position: center;
-
-    background-image: url("./decent.png");
-    background-size: cover;
-        border: 3px solid red;
 
     background-repeat: no-repeat;
 }
-
+iframe{
+    border: 3px solid rgb(3, 3, 3);
+}
 .center {
     background: #111319;
     /* padding: 90px; */
@@ -654,11 +606,7 @@ footer {
         flex-direction: column;
     }
 
-    .netflix {
-        flex-direction: column;
-        /* width: 80%; */
-    }
-
+    
     .center {
         flex-direction: column;
     }
@@ -691,19 +639,7 @@ footer {
         align-items: center;
     }
 
-    .netflix button,
-    .perfume button,
-    .decent button {
-        width: 100%;
-        font-size: 14px;
-        background-color: #bdbdc9;
-        cursor: pointer;
-        border: 1px solid white;
-        box-shadow: 0 0 25px rgba(110, 17, 46, 0.4);
-        transition: transform 0.4s ease, box-shadow 0.4s ease;
-
-
-    }
+  
 
     .card {
         width: 80%;
@@ -727,8 +663,9 @@ footer {
         justify-content: space-between;
         padding: 0 10px;
     }
-.first img{
- height: 40vh;
-    width: 70%;
-}
+
+    .first img {
+        height: 40vh;
+        width: 70%;
+    }
 }
